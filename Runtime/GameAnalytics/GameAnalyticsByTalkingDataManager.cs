@@ -140,7 +140,7 @@ namespace GameFrameX.GameAnalytics.TalkingData.Runtime
         [UnityEngine.Scripting.Preserve]
         public override void SetPlayerId(string playerId)
         {
-            var profile = new TalkingDataProfile();
+            var profile = TalkingDataProfile.CreateProfile();
             profile.SetName(playerId);
             TalkingDataSDK.OnProfileUpdate(profile);
         }
