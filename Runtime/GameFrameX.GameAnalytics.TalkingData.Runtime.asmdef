@@ -1,0 +1,17 @@
+{
+  "name": "GameFrameX.GameAnalytics.TalkingData.Runtime",
+  "references": [
+    "GameFrameX.GameAnalytics.Runtime",
+    "GameFrameX.Runtime",
+    "GameFrameX.TalkingData.Sdk.Runtime"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": true,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
