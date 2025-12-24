@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/gameframex/com.gameframex.unity.gameanalytics.talkingdata/compare/1.0.2...1.1.0) (2025-12-24)
+
+
+### Features
+
+* **ci:** change ci ([4e544dc](https://github.com/gameframex/com.gameframex.unity.gameanalytics.talkingdata/commit/4e544dc084604432e93c7ca9b3a2e486ad2f1d2f))
+
 # Changelog
 
 ## [1.0.2](https://github.com/GameFrameX/com.gameframex.unity.gameanalytics.talkingdata/tree/1.0.2) (2025-06-01)
