@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/gameframex/com.gameframex.unity.gameanalytics.talkingdata/compare/1.1.0...1.2.0) (2026-10-15)
+
+
+### Features
+
+* **gameanalytics:** 渠道接入注册表 Bootstrap 自注册 ([1e05018](https://github.com/gameframex/com.gameframex.unity.gameanalytics.talkingdata/commit/1e05018d252095e461846cc89233ac37085597b6))
+
 # [1.1.0](https://github.com/gameframex/com.gameframex.unity.gameanalytics.talkingdata/compare/1.0.2...1.1.0) (2025-12-24)
 
 

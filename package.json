@@ -3,7 +3,7 @@
   "displayName": "Game Frame X Game Analytics(Talking Data)",
   "category": "Game Frame X",
   "description": "TalkingData analytics provider for GameFrameX GameAnalytics. Wraps the TalkingData analytics SDK for integration with the GameFrameX framework, fully compatible with the GameFrameX.GameAnalytics interface. Supports reporting game events and user behaviors through the unified event APIs, using the companion talkingdata.sdk package for the underlying Unity wrapper and native libraries. Docs: https://gameframex.doc.alianblank.com\n\nGameFrameX GameAnalytics 的 TalkingData 统计实现功能包。封装 TalkingData 分析 SDK 以与 GameFrameX 框架集成，完全兼容 GameFrameX.GameAnalytics 接口。通过统一事件 API 上报游戏事件和用户行为，底层 Unity 封装与原生库由配套的 talkingdata.sdk 包提供。文档：https://gameframex.doc.alianblank.com",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "unity": "2019.4",
   "keywords": [
     "Game Frame X"
