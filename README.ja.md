@@ -71,6 +71,23 @@ public class TalkingDataExample : MonoBehaviour
 }
 ```
 
+## Bootstrap 自己登録（チャネルレジストリ）
+
+本パッケージは `TalkingDataAnalyticsBootstrap` により `BeforeSceneLoad` フェーズでコアパッケージ（`com.gameframex.unity.gameanalytics`）の `GameAnalyticsRegistry` に自己登録します。登録は即時に有効化され、すべての統計イベントが登録済みの全チャネルへブロードキャストされます。本パッケージが未インストールの場合、コードはストリップされ登録は発生しません。
+
+チャネル設定は起動時の強型付け代入に変わりました（マネージャーは遅延生成されるため、シーン読み込み前に代入すれば有効です）：
+
+```csharp
+GameFrameX.GameAnalytics.TalkingData.Runtime.TalkingDataAnalyticsBootstrap.Setting =
+    new GameFrameX.GameAnalytics.TalkingData.Runtime.GameAnalyticsTalkingDataSetting
+    {
+        appid = "あなたの AppId",
+        channelId = "AppStore",
+    };
+```
+
+**破壊的変更 / 移行ガイド:** 従来の `GameAnalyticsComponent` Inspector でのキー値ペアによる TalkingData 設定は削除され、効果がなくなりました。上記の強型付け設定をゲームの起動コードで使用してください。
+
 ## 変更履歴
 
 詳細は [CHANGELOG.md](CHANGELOG.md) をご覧ください。

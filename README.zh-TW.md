@@ -71,6 +71,23 @@ public class TalkingDataExample : MonoBehaviour
 }
 ```
 
+## Bootstrap 自註冊（渠道註冊表）
+
+本包透過 `TalkingDataAnalyticsBootstrap` 在 `BeforeSceneLoad` 階段向核心包（`com.gameframex.unity.gameanalytics`）的 `GameAnalyticsRegistry` 自註冊，註冊即生效：所有統計事件廣播到全部註冊渠道。未安裝本包時程式碼被裁剪，註冊不會發生。
+
+渠道配置改為啟動期強型別賦值（管理器懶實例化，場景載入前完成賦值即可生效）：
+
+```csharp
+GameFrameX.GameAnalytics.TalkingData.Runtime.TalkingDataAnalyticsBootstrap.Setting =
+    new GameFrameX.GameAnalytics.TalkingData.Runtime.GameAnalyticsTalkingDataSetting
+    {
+        appid = "你的 AppId",
+        channelId = "AppStore",
+    };
+```
+
+**破壞性變更 / 遷移說明：** 原先在 `GameAnalyticsComponent` Inspector 上以鍵值對配置 TalkingData 參數的方式已移除、不再生效，請在遊戲啟動程式碼中改用上述強型別配置。
+
 ## 更新日誌
 
 詳見 [CHANGELOG.md](CHANGELOG.md)。

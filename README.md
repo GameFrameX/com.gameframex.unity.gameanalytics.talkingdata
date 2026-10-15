@@ -71,6 +71,23 @@ public class TalkingDataExample : MonoBehaviour
 }
 ```
 
+## Bootstrap Self-Registration (Channel Registry)
+
+This package registers itself into the core package's (`com.gameframex.unity.gameanalytics`) `GameAnalyticsRegistry` at `BeforeSceneLoad` via `TalkingDataAnalyticsBootstrap`. Registration means activation: all analytics events are broadcast to every registered channel. If this package is not installed the code is stripped and registration never happens.
+
+Channel configuration is now strongly typed and assigned at startup (managers are created lazily, so assign any time before scene load):
+
+```csharp
+GameFrameX.GameAnalytics.TalkingData.Runtime.TalkingDataAnalyticsBootstrap.Setting =
+    new GameFrameX.GameAnalytics.TalkingData.Runtime.GameAnalyticsTalkingDataSetting
+    {
+        appid = "your app id",
+        channelId = "AppStore",
+    };
+```
+
+**Breaking change / migration:** the previous key-value configuration for TalkingData on the `GameAnalyticsComponent` Inspector has been removed and no longer takes effect. Use the strongly typed setting above in your game startup code instead.
+
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for details.
