@@ -9,6 +9,7 @@ namespace GameFrameX.GameAnalytics.TalkingData.Runtime
         private void Start()
         {
             _ = typeof(GameAnalyticsByTalkingDataManager);
+            _ = typeof(TalkingDataAnalyticsBootstrap);
         }
     }
 }

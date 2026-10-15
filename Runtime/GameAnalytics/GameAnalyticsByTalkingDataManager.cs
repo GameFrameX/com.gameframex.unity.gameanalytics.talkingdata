@@ -10,6 +10,12 @@ namespace GameFrameX.GameAnalytics.TalkingData.Runtime
     [UnityEngine.Scripting.Preserve]
     public sealed class GameAnalyticsByTalkingDataManager : BaseGameAnalyticsManager
     {
+        /// <summary>
+        /// 渠道唯一标识
+        /// </summary>
+        [UnityEngine.Scripting.Preserve]
+        public const string ChannelId = "talkingdata";
+
         private readonly Dictionary<string, object> m_publicProperties = new Dictionary<string, object>();
         private readonly Dictionary<string, string> Args = new Dictionary<string, string>();
         private GameAnalyticsTalkingDataSetting m_GameAnalyticsSetting;
