@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/gameframex/com.gameframex.unity.gameanalytics.talkingdata/compare/1.2.0...1.2.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* **gameanalytics.talkingdata:** 添加完整 link.xml 防代码裁剪保护 ([68feab8](https://github.com/gameframex/com.gameframex.unity.gameanalytics.talkingdata/commit/68feab8ffea521c11197c17215289eaaeeeef2dc))
+
 # [1.2.0](https://github.com/gameframex/com.gameframex.unity.gameanalytics.talkingdata/compare/1.1.0...1.2.0) (2026-10-15)
 
 
